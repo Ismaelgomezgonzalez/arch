@@ -12,7 +12,7 @@ pacstrap /mnt base base-devel linux linux-firmware firefox qtile sddm gnome thun
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
-grub-install --target=i386-pc /dev/sda1
+grub-install --target=i386-pc /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 
 systemctl enable sddm

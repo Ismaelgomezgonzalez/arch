@@ -12,4 +12,4 @@ pacstrap /mnt base base-devel linux linux-firmware firefox qtile sddm gnome thun
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
-arch-chroot
+arch-chroot /mnt
